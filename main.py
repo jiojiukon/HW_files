@@ -52,3 +52,12 @@ with open('recipes.txt', 'r', encoding ='utf8') as recipes_list:
 
 good_output(cook_book)
 get_shop_list_by_dishes(['Капитал', 'Омлет'], 25)
+
+with open('shoplist.txt','w', encoding='utf8') as shopping:
+    for ingr_name, ing_measure  in shop_list.items():
+        amount = list(ing_measure.values())
+        shopping.write(f'{ingr_name}: ')
+        for i in amount:
+            i = str(i) 
+            shopping.write(f'{i}')
+        shopping.write(f'\n')
