@@ -39,6 +39,7 @@ def join_texts():
         for name, count in sorted_text_info.items():
             merge.write(f'{name}\n{count}\n')
             merge.writelines(text_open(name))
+            merge.write(f'\n\n')
     return print('Файлы объединены! в "merged_text.txt"')
 
 join_texts()
