@@ -51,7 +51,7 @@ with open('recipes.txt', 'r', encoding ='utf8') as recipes_list:
         recipes_list.readline()
 
 good_output(cook_book)
-get_shop_list_by_dishes(['Капитал', 'Омлет'], 25)
+get_shop_list_by_dishes(['Капитал', 'Запеченный картофель'], 4)
 
 with open('shoplist.txt','w', encoding='utf8') as shopping:
     for ingr_name, ing_measure  in shop_list.items():

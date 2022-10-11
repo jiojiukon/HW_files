@@ -35,7 +35,7 @@ def sort(a,b,c) -> None:
 sort(t1,t2,t3)
 
 def join_texts():
-    with open('merged_text', 'w', encoding='utf8') as merge:
+    with open('merged_text.txt', 'w', encoding='utf8') as merge:
         for name, count in sorted_text_info.items():
             merge.write(f'{name}\n{count}\n')
             merge.writelines(text_open(name))
